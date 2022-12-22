@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="shortcut icon" href="../favicon_io (3)/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/style.css" />
+    <link rel="stylesheet" href="../estilos/media-queries.css" />
+  </head>
+  <body>
+    <main>
+      <section id="logo"></section>
+
+      <section id="formulario">
+        <h1>Fazer login</h1>
+        <form action="#" method="post" autocomplete="on">
+          <div>
+            <label for="iemail"></label>
+            <input
+              class="dados"
+              type="email"
+              name="email"
+              id="iemail"
+              autocomplete="email"
+              placeholder="E-mail"
+              required
+              maxlength="40"
+            />
+          </div>
+
+          <div>
+            <label for="isenha"></label>
+            <input
+              class="dados"
+              type="password"
+              name="senha"
+              id="isenha"
+              placeholder="Senha"
+              required
+              minlength="8"
+              maxlength="30"
+            />
+          </div>
+
+          <div id="sub-form">
+            <div id="conjuntoLembrar">
+              <input type="checkbox" name="lembrar" id="ilembrar" />
+              <label for="ilembrar">Lembrar e-mail e senha</label>
+            </div>
+            <a href="#" id="esqueci">Esqueci minha senha</a>
+          </div>
+
+          <input id="entrar" type="submit" value="Entrar" />
+        </form>
+
+        <p id="ou">ou</p>
+      </section>
+      
+      <section id="cadastrar">
+        <p id="cadastrar"><a href="#">Cadastar</a></p>
+      </section>
+    </main>
+  </body>
+</html>

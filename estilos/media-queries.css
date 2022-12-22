@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/*
+    Typical Devices Breakpoints
+
+    Pequenas Telas: até 600px
+    Celular: de 600px até 768px 
+    Tbalet: 768px aaté 992px
+    Desktop: 992px até 1200px
+    Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {   /* TABLET */
+
+    main > section#logo{
+        margin: 5px;
+    }
+
+    main > section#formulario {
+        height: 35vh;
+        width: 70vw;
+        margin: 0vh 13vw;
+    }
+
+    p#ou {
+        margin: 11px;
+    }
+
+    section#cadastrar {
+        width: 70vw;
+        border-radius: 0px 0px 20px 20px;
+        padding: 10px 20px;
+        margin: 0vh 13vw;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.384);
+    }
+}
+
+
+@media screen and (min-width: 992px) {   /* DESKTOP */
+    body {
+        background-color: #0080370e;
+    }
+
+    main {
+        position: absolute; 
+        height: 100vh;
+        width: 100vw;
+    }
+
+    main > section#logo {
+        float: left;
+        background-color: white;
+        background-position: center center;
+        position: cover;
+        display: inline;
+        height: 49vh;
+        width: 25vw;
+        border-radius: 20px 0px 0px 20px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.205);
+        
+        position: relative;
+        top: 25%;
+        left: 20%;
+
+        transform: translate(-25%, -10%);
+    }
+
+    main > section#formulario {
+        width: 40vw;
+        height: 40vh;
+        border-radius: 0px 20px 0px 0px;
+        position: relative;
+        left: 25%;
+        top: 50%;
+
+        transform: translate(-30%, -50%);
+    }
+
+    section#cadastrar {
+        width: 40vw;
+        padding: 10px 20px;
+        border-radius: 0px 0px 20px 0px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.253);
+        position: relative;
+        top: 25%;
+        left: 25%;
+
+        transform: translate(-30%, -20%);
+    }
+
+}
